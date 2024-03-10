@@ -1,0 +1,57 @@
+.container {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+  }
+  .education_details{
+    margin-left: 10%;
+  }
+
+  .vl {
+  margin-left: 12rem;
+  border-left: 2px solid #1488CC;
+  height: 10rem;
+  position: absolute;
+}
+
+  .image {
+    width: 150px;
+    height: 150px;
+  }
+  
+  .line {
+    height: 2px;
+    width: 100%;
+    background-color: #5e5e5f;
+    transition: background-color 0.3s ease;
+  }
+  
+  .line:hover {
+    background-color: #1488CC;
+  }
+
+
+  @media only screen and (max-width: 600px) {
+    .container {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+    
+    .image {
+      margin-bottom: 20px;
+    }
+    
+    .education_details {
+      margin-left: 0;
+    }
+    
+    .vl {
+    
+      border-left: none;
+      /* border-top: 2px solid #1488CC; */
+      width: 100%;
+      margin-left: 10px;
+      /* padding: 10px; */
+    
+    }
+  }
